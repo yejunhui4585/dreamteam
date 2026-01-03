@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamTeam应急方案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff0000 0%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 80px 20px 20px;
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #ff0000 0%, #ffffff 100%);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 28px;
+            margin: 0;
+        }
+        
+        .header-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #000000 !important;
+            border: 2px solid #000000;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+        
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: #000000;
+            color: #000000 !important;
+        }
+        
+        .container {
+            width: 175px;
+            height: 175px;
+            margin: 0 0 0 20px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .file-info {
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .more-btn {
+            background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 25px;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .more-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(33, 150, 243, 0.4);
+        }
+        
+        .more-btn:active {
+            transform: translateY(0);
+        }
+        
+        .download-section {
+            margin: 15px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            color: white;
+            border: none;
+            width: 135px;
+            height: 40px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>DreamTeam应急方案</h1>
+        <div>
+            <a href="https://dreamteam4585.online" class="header-btn" target="_blank">主页</a>
+            <a href="https://docs.dreamteam4585.online" class="header-btn" target="_blank">文档</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="file-info">
+            <span>Kill_JiYu</span>
+            <a href="https://docs.dreamteam4585.online" class="more-btn">更多</a>
+        </div>
+        <div class="download-section">
+            <a href="https://gitee.com/dreamteam4585/Kill_JiYu-DreamTeam/raw/master/JiYuTrainer.exe" download="Kill_JiYu" class="download-btn">下载文件</a>
+            <a href="https://github.dreamteam4585.online/yejunhui4585/dreamteam/archive/refs/heads/main.zip" download="Kill_JiYu" class="download-btn">备用下载</a>
+        </div>
+    </div>
+</body>
+</html>
